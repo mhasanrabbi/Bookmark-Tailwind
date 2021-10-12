@@ -17,7 +17,10 @@
   <body class="font-Rubik">
     <!-- Header -->
     <header>
-      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+      <nav
+        class="container flex items-center py-4 mt-4 sm:mt-12 relative"
+        id="navbar"
+      >
         <div class="py-1">
           <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
@@ -71,7 +74,91 @@
           </button>
         </ul>
         <div class="flex sm:hidden flex-1 justify-end">
-          <i class="fas fa-bars text-xl"></i>
+          <i class="fas fa-bars text-xl" id="hamburger"></i>
+        </div>
+        <!-- Mobile Nav -->
+
+        <div
+          class="
+            hidden
+            bg-bookmark-blue bg-opacity-95
+            z-20
+            px-8
+            py-16
+            absolute
+            inset-0
+            m-0
+            transition-all
+            h-screen
+            w-full
+          "
+          id="mobile-nav"
+        >
+          <div class="top format flex justify-between items-center mb-8">
+            <img src="./images/logo-bookmark-mobile.svg" alt="Company logo" />
+            <a href="#" class="close--out">
+              <img
+                src="images/icon-close.svg"
+                class="rounded-full bg-bookmark-grey p-3"
+                alt=""
+                id="close"
+              />
+            </a>
+          </div>
+          <div class="inner__mobile format flex justify-between flex-col h-4/5">
+            <ul class="links list-none flex flex-col">
+              <hr class="bg-bookmark-grey opacity-10" />
+              <li
+                class="uppercase text-center tracking-wide my-5 px-5 text-white"
+              >
+                <a href="#">Features</a>
+              </li>
+              <hr class="bg-bookmark-grey opacity-10" />
+              <li
+                class="uppercase text-center tracking-wide my-5 px-5 text-white"
+              >
+                <a href="#">Pricing</a>
+              </li>
+              <hr class="bg-bookmark-grey opacity-10" />
+              <li
+                class="uppercase text-center tracking-wide my-5 px-5 text-white"
+              >
+                <a href="#">Contact</a>
+              </li>
+              <hr class="bg-bookmark-grey opacity-10" />
+              <li
+                class="uppercase text-center tracking-wide my-5 px-5 text-white"
+              >
+                <button class="mobile-nav-btn">Login</button>
+              </li>
+            </ul>
+            <div
+              class="
+                mobile--socials
+                format
+                flex
+                justify-between
+                items-center
+                w-28
+                mx-auto
+              "
+            >
+              <a href="#">
+                <img
+                  src="images/icon-facebook.svg"
+                  alt="Facebook icon"
+                  class="h-5/6"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/icon-twitter.svg"
+                  alt="Twitter icon"
+                  class="h-5/6"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -627,5 +714,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
   </body>
 </html>

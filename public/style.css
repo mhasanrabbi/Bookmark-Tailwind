@@ -33147,6 +33147,35 @@ video {
   background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
 }
 
+.mobile-nav-btn {
+  width: 100%;
+  cursor: pointer;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  background-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.show {
+  display: block;
+}
+
+.click.x {
+  transform: rotateZ(360deg);
+  transition: transform 0.6s;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

@@ -15,3 +15,16 @@
 .btn-white {
   @apply bg-bookmark-white;
 }
+
+.mobile-nav-btn {
+  @apply uppercase bg-transparent text-white cursor-pointer tracking-wide w-full border-2 border-solid border-white rounded-r-sm px-4 py-2;
+}
+
+.show {
+  display: block;
+}
+
+.click.x {
+  transform: rotateZ(360deg);
+  transition: transform 0.6s;
+}
