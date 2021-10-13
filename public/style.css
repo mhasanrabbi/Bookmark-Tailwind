@@ -33188,26 +33188,6 @@ video {
   color: rgba(250, 89, 89, var(--tw-text-opacity));
 }
 
-[data-faq-answer] {
-  display: none;
-}
-
-.open[data-faq-answer] {
-  display: block;
-}
-
-.open .icon-rotate {
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-rotate: 180deg;
-}
-
 /* hide text */
 
 .question-text {

@@ -36,29 +36,19 @@
   @apply text-bookmark-red border-b border-dashed border-bookmark-red;
 }
 
-[data-faq-answer] {
-  @apply hidden;
-}
-.open[data-faq-answer] {
-  @apply block;
-}
-.open .icon-rotate {
-  @apply transform rotate-180;
-}
-
 /* hide text */
 .question-text {
-  display: none;
+  @apply hidden;
 }
 .show-text .question-text {
-  display: block;
+  @apply block;
 }
 .minus-icon {
-  display: none;
+  @apply hidden;
 }
 .show-text .minus-icon {
-  display: inline;
+  @apply inline;
 }
 .show-text .plus-icon {
-  display: none;
+  @apply hidden;
 }
