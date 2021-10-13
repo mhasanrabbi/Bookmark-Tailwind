@@ -28,3 +28,21 @@
   transform: rotateZ(360deg);
   transition: transform 0.6s;
 }
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+[data-faq-answer] {
+  display: none;
+}
+.open[data-faq-answer] {
+  display: block;
+}
+.open .icon-rotate {
+  transform: rotate(180deg);
+}
