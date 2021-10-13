@@ -21,28 +21,44 @@
 }
 
 .show {
-  display: block;
-}
-
-.click.x {
-  transform: rotateZ(360deg);
-  transition: transform 0.6s;
+  @apply block;
 }
 
 [data-tab-content] {
-  display: none;
+  @apply hidden;
 }
 
 .active[data-tab-content] {
-  display: block;
+  @apply block;
+}
+
+.active-tab {
+  @apply text-bookmark-red border-b border-dashed border-bookmark-red;
 }
 
 [data-faq-answer] {
-  display: none;
+  @apply hidden;
 }
 .open[data-faq-answer] {
-  display: block;
+  @apply block;
 }
 .open .icon-rotate {
-  transform: rotate(180deg);
+  @apply transform rotate-180;
+}
+
+/* hide text */
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
 }

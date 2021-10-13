@@ -33171,17 +33171,21 @@ video {
   display: block;
 }
 
-.click.x {
-  transform: rotateZ(360deg);
-  transition: transform 0.6s;
-}
-
 [data-tab-content] {
   display: none;
 }
 
 .active[data-tab-content] {
   display: block;
+}
+
+.active-tab {
+  border-bottom-width: 1px;
+  border-style: dashed;
+  --tw-border-opacity: 1;
+  border-color: rgba(250, 89, 89, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(250, 89, 89, var(--tw-text-opacity));
 }
 
 [data-faq-answer] {
@@ -33193,7 +33197,37 @@ video {
 }
 
 .open .icon-rotate {
-  transform: rotate(180deg);
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-rotate: 180deg;
+}
+
+/* hide text */
+
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
 }
 
 @media (min-width: 640px) {

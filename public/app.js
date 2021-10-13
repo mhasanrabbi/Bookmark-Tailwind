@@ -28,16 +28,26 @@ tabs.forEach((tab) => {
     tabContents.forEach((tabContents) => {
       tabContents.classList.remove('active');
     });
+    tabs.forEach((tab) => {
+      tab.classList.remove('active-tab');
+    });
+    tab.classList.add('active-tab');
     target.classList.add('active');
   });
 });
 
 // FAQ Accordion
-let item = document.querySelectorAll('[data-faq-item]');
-let i;
 
-for (i = 0; i < item.length; i++) {
-  item[i].addEventListener('click', function () {
-    this.classList.toggle('open');
+const questions = document.querySelectorAll('.question');
+
+questions.forEach(function (question) {
+  const btn = question.querySelector('.question-btn');
+  btn.addEventListener('click', function () {
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove('show-text');
+      }
+    });
+    question.classList.toggle('show-text');
   });
-}
+});
